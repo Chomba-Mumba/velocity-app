@@ -6,7 +6,7 @@ import './navbar.css'
 const Menu = () => (
   <>
   <p><a href="#home">Home</a></p>
-  <p><a href="#gpt3">What is GPT3</a></p>
+  <p><a href="#velocity">What is velocity</a></p>
   <p><a href="#posibility">Open AI</a></p>
   <p><a href="#features">Case Studies</a></p>
   <p><a href="#blog">Library</a></p>
@@ -16,29 +16,29 @@ const Navbar = () => {
   const[toggleMenu, setToggleMenu] = useState(false);
   
   return (
-    <div className="gpt3__navbar">
-      <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_logo">
+    <div className="velocity__navbar">
+      <div className="velocity__navbar-links">
+        <div className="velocity__navbar-links_logo">
           <img src={logo}></img>
         </div>
-        <div className="gpt3__navbar-links_container">
+        <div className="velocity__navbar-links_container">
           <Menu />
         </div>
       </div>
-      <div className="gpt3__navbar-sign">
+      <div className="velocity__navbar-sign">
         <p>Sign in</p>
         <button type="button">Sign up</button>
       </div>
-      <div className="gpt3__navbar-menu">
+      <div className="velocity__navbar-menu">
         {toggleMenu
           ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)}/>
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(false)}/>
         }
         {toggleMenu && (
-          <div className='gpt3__navbar-menu_container scale-up-center'>
-            <div className='gpt3__navbar-menu_contaner-links'>
+          <div className='velocity__navbar-menu_container scale-up-center'>
+            <div className='velocity__navbar-menu_contaner-links'>
               <Menu />
-              <div className="gpt3__navbar-menu_container-links-sign">
+              <div className="velocity__navbar-menu_container-links-sign">
                 <p>Sign in</p>
                 <button type="button">Sign up</button>
               </div>

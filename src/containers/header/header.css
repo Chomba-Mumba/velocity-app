@@ -1,8 +1,8 @@
-.gpt3__header {
+.velocity__header {
     display: flex;
 }
 
-.gpt3__header-content{
+.velocity__header-content{
     flex: 1;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@
     margin-right: 5rem;
 }
 
-.gpt3__header-content h1 {
+.velocity__header-content h1 {
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 62px;
@@ -21,7 +21,7 @@
 
 }
 
-.gpt3__header-content p {
+.velocity__header-content p {
     font-family: var(--font-family);
     font-style: normal;
     font-weight: normal;
@@ -32,51 +32,52 @@
     margin-top: 1.5rem;
 }
 
-.gpt3__header-content__input{
+.velocity__header-content__input {
     width: 100%;
     margin: 2rem 0 1rem;
+
     display: flex;
+    flex-direction: row;
 }
 
-.gpt3__header-content__input input{
+.velocity__header-content__input input {
     flex: 2;
     width: 100%;
     min-height: 50px;
-    background: #052D56;
     font-family: var(--font-family);
+    font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
-    color: var(--color-footer);
+    line-height: 28px;
+    background: var(--color-footer);
     border: 2px solid var(--color-footer);
     padding: 0 1rem;
     outline: none;
     color: #fff;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
 
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-.gpt3__header-content__input button{
+.velocity__header-content__input button {
     flex: 0.6;
     width: 100%;
     min-height: 50px;
-    background: #FF4820;
-    transform: matrix(-1,0,0,1,0,0);
     font-family: var(--font-family);
-    font-weight: bold;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
+    line-height: 28px;
+    background: #FF4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
     cursor: pointer;
     outline: none;
-    padding: 0 1rem;
-    border: none;
+
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-
 }
 
-.gpt3__header-content__people {
+.velocity__header-content__people {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -86,12 +87,12 @@
 
 }
 
-.gpt3__header-content__people img {
+.velocity__header-content__people img {
     width: 181.79px;
     height: 38px;
 }
 
-.gpt3__header-content__people p{
+.velocity__header-content__people p{
     margin-left: 0 0 0 1rem;
     font-family: var(--font-family);
     font-weight: 500;
@@ -102,7 +103,7 @@
 
 }
 
-.gpt3__header-image {
+.velocity__header-image {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -110,53 +111,53 @@
 
 }
 
-.gpt3__header-image img{
+.velocity__header-image img{
     width: 100%;
     height: 100%;
 }
 
 @media screen and (max-width: 1050px){
-    .gpt3__header{
+    .velocity__header{
         flex-direction: column;
     }
-    .gpt3__header-content{
+    .velocity__header-content{
         margin: 0 0 3rem;
     }
 }
 
 @media screen and (max-width: 650px){
-    .gpt3__header h1{
+    .velocity__header h1{
         font-size: 48px;
         line-height: 60px;
     }
-    .gpt3__header p{
+    .velocity__header p{
         font-size: 16px;
         line-height: 24px;
     }
-    .gpt3__header-content__people{
+    .velocity__header-content__people{
         flex-direction: column;
     }
-    .gpt3__header-content__people p{
+    .velocity__header-content__people p{
         margin: 0;
     }
-    .gpt3__header-content__input input, 
-    .gpt3__header-content__input button {
+    .velocity__header-content__input input, 
+    .velocity__header-content__input button {
         font-size: 16px;
         line-height: 24px;
     } 
 }
 
 @media screen and (max-width: 490px){
-    .gpt3__header h1{
+    .velocity__header h1{
         font-size: 36px;
         line-height: 48px;
     }
-    .gpt3__header p{
+    .velocity__header p{
         font-size: 14px;
         line-height: 24px;
     }
-    .gpt3__header-content__input input, 
-    .gpt3__header-content__input button {
+    .velocity__header-content__input input, 
+    .velocity__header-content__input button {
         font-size: 12px;
         line-height: 16spx;
     } 
